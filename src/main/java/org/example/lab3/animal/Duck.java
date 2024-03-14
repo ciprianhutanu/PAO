@@ -5,8 +5,8 @@ import java.util.Objects;
 public class Duck extends Bird{
     private int length;
 
-    public Duck(String name, int noOfLegs, String colour, int length) {
-        super(name, noOfLegs, colour);
+    public Duck(int noOfLegs, String name, String colour, int length) {
+        super(noOfLegs, name, colour);
         this.length = length;
     }
 

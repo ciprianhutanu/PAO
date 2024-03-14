@@ -1,4 +1,7 @@
 package org.example.lab3.animal;
+
+import java.util.Objects;
+
 public class Animal {
     private String name;
     private int noOfLegs;
@@ -36,5 +39,18 @@ public class Animal {
     public void eat(String food){
         System.out.println("I eat " + food);
     }
+
+//    @Override
+//    public boolean equals(Object o) {
+//        if (this == o) return true;
+//        if (o == null || getClass() != o.getClass()) return false;
+//        Animal animal = (Animal) o;
+//        return noOfLegs == animal.noOfLegs && Objects.equals(name, animal.name);
+//    }
+//
+//    @Override
+//    public int hashCode() {
+//        return Objects.hash(name, noOfLegs);
+//    }
 }
 
